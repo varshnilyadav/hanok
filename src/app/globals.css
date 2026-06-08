@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FAF0E6;
+  --foreground: #1B2A5E;
+  
+  --brand-navy: #1B2A5E;
+  --brand-cream: #FAF0E6;
+  --brand-orange: #D96B2B;
+  --brand-red: #C0392B;
+  
+  --font-outfit: var(--font-outfit);
+  --font-lora: var(--font-lora);
+}
+
+@theme {
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-red: var(--brand-red);
+  
+  --font-heading: var(--font-outfit), sans-serif;
+  --font-body: var(--font-lora), serif;
+}
+
+body {
+  background-color: var(--brand-cream);
+  color: var(--brand-navy);
+  font-family: var(--font-lora), serif;
+}
+
+/* Custom Utilities */
+
+.font-heading {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-lora), serif;
+}
+
+/* Traditional Korean Lattice (Changsal) Grid Pattern */
+.bg-lattice {
+  background-image: 
+    linear-gradient(to right, rgba(27, 42, 94, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(27, 42, 94, 0.04) 1px, transparent 1px),
+    linear-gradient(to right, rgba(27, 42, 94, 0.02) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(27, 42, 94, 0.02) 2px, transparent 2px);
+  background-size: 32px 32px, 32px 32px, 128px 128px, 128px 128px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--brand-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-orange);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-red);
+}
