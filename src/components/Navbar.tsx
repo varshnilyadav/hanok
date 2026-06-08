@@ -35,7 +35,7 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
-            ? "bg-brand-navy/95 backdrop-blur-md border-b border-brand-orange/20 py-3 shadow-lg"
+            ? "bg-brand-cream/95 backdrop-blur-md border-b border-brand-orange/20 py-3 shadow-lg"
             : "bg-transparent py-5"
         }`}
       >
@@ -56,15 +56,13 @@ export default function Navbar() {
               <div className="flex flex-col">
                 <span
                   className={`font-heading font-extrabold tracking-widest text-lg sm:text-xl transition-colors duration-300 ${
-                    isScrolled ? "text-brand-cream" : "text-brand-cream sm:text-brand-navy"
+                    isScrolled ? "text-brand-navy" : "text-brand-cream"
                   }`}
                 >
                   HANOK
                 </span>
                 <span
-                  className={`text-[9px] font-heading uppercase tracking-[0.3em] font-medium -mt-1 transition-colors duration-300 ${
-                    isScrolled ? "text-brand-orange" : "text-brand-orange"
-                  }`}
+                  className="text-[9px] font-heading uppercase tracking-[0.3em] font-medium -mt-1 text-brand-orange"
                 >
                   Seoulful Food
                 </span>
@@ -78,7 +76,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   className={`font-heading text-sm font-medium uppercase tracking-wider transition-all duration-300 relative py-1 hover:text-brand-orange group ${
-                    isScrolled ? "text-brand-cream" : "text-brand-cream md:text-brand-navy"
+                    isScrolled ? "text-brand-navy" : "text-brand-cream"
                   }`}
                 >
                   {link.name}
@@ -91,10 +89,10 @@ export default function Navbar() {
             <div className="hidden md:flex items-center">
               <Link
                 href="#reserve"
-                className={`font-heading text-xs font-semibold uppercase tracking-wider py-3 px-6 rounded-none transition-all duration-300 border-2 ${
+                className={`font-heading text-xs font-semibold uppercase tracking-wider py-3 px-6 rounded-none transition-all duration-300 border-2 cursor-pointer ${
                   isScrolled
-                    ? "bg-brand-orange border-brand-orange text-brand-cream hover:bg-transparent hover:text-brand-cream hover:border-brand-cream"
-                    : "bg-brand-navy border-brand-navy text-brand-cream hover:bg-transparent hover:text-brand-navy"
+                    ? "bg-brand-navy border-brand-navy text-brand-cream hover:bg-transparent hover:text-brand-navy"
+                    : "bg-transparent border-brand-cream text-brand-cream hover:bg-brand-cream hover:text-brand-navy"
                 }`}
               >
                 Book a Table
@@ -105,8 +103,8 @@ export default function Navbar() {
             <div className="flex md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`p-2 transition-colors duration-300 hover:text-brand-orange ${
-                  isScrolled ? "text-brand-cream" : "text-brand-cream sm:text-brand-navy"
+                className={`p-2 transition-colors duration-300 hover:text-brand-orange cursor-pointer ${
+                  isScrolled ? "text-brand-navy" : "text-brand-cream"
                 }`}
                 aria-label="Toggle navigation menu"
               >
@@ -129,18 +127,18 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-brand-navy flex flex-col justify-center items-center md:hidden"
+            className="fixed inset-0 z-40 bg-brand-cream text-brand-navy flex flex-col justify-center items-center md:hidden"
           >
             {/* Close Overlay when background clicked */}
             <div
-              className="absolute inset-0 bg-brand-navy -z-10"
+              className="absolute inset-0 bg-brand-cream -z-10"
               onClick={() => setIsMobileMenuOpen(false)}
             />
 
             {/* Decorative Close Button inside drawer */}
             <button
               onClick={() => setIsMobileMenuOpen(false)}
-              className="absolute top-6 right-6 text-brand-cream hover:text-brand-orange p-2"
+              className="absolute top-6 right-6 text-brand-navy hover:text-brand-orange p-2 cursor-pointer"
               aria-label="Close menu"
             >
               <X className="w-8 h-8" />
@@ -148,7 +146,7 @@ export default function Navbar() {
 
             {/* Logo in Drawer */}
             <div className="mb-12 flex flex-col items-center">
-              <div className="relative w-20 h-20 overflow-hidden rounded-full border-2 border-brand-orange/50 bg-brand-cream/10 mb-4">
+              <div className="relative w-20 h-20 overflow-hidden rounded-full border-2 border-brand-orange/50 bg-brand-navy/10 mb-4">
                 <Image
                   src="/images/logo.png"
                   alt="HANOK Logo"
@@ -157,7 +155,7 @@ export default function Navbar() {
                   className="object-cover scale-110"
                 />
               </div>
-              <h2 className="font-heading font-black tracking-widest text-2xl text-brand-cream">
+              <h2 className="font-heading font-black tracking-widest text-2xl text-brand-navy">
                 HANOK
               </h2>
               <p className="text-xs font-heading uppercase tracking-[0.4em] text-brand-orange">
@@ -177,7 +175,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="font-heading text-lg font-medium uppercase tracking-widest text-brand-cream hover:text-brand-orange transition-colors"
+                    className="font-heading text-lg font-medium uppercase tracking-widest text-brand-navy hover:text-brand-orange transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -194,7 +192,7 @@ export default function Navbar() {
               <Link
                 href="#reserve"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="font-heading text-sm font-semibold uppercase tracking-wider py-4 px-8 bg-brand-orange text-brand-cream hover:bg-brand-red border-2 border-brand-orange hover:border-brand-red transition-all duration-300 flex items-center gap-2"
+                className="font-heading text-sm font-semibold uppercase tracking-wider py-4 px-8 bg-brand-navy text-brand-cream hover:bg-brand-orange border-2 border-brand-navy hover:border-brand-orange transition-all duration-300 flex items-center gap-2 cursor-pointer"
               >
                 <UtensilsCrossed className="w-4 h-4" />
                 Book a Table

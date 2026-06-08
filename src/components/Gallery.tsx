@@ -145,7 +145,7 @@ export default function Gallery() {
                 />
                 
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-brand-navy/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 border-2 border-brand-orange/60 m-3">
+                <div className="absolute inset-0 bg-[#181512]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 border-2 border-brand-orange/60 m-3">
                   <ZoomIn className="w-6 h-6 text-brand-orange mb-3 transition-transform duration-500 translate-y-3 group-hover:translate-y-0" />
                   <span className="font-heading text-[10px] uppercase tracking-[0.2em] text-brand-orange font-bold mb-1">
                     {item.category}
@@ -167,7 +167,7 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-brand-navy/95 flex flex-col items-center justify-center p-4 sm:p-8"
+            className="fixed inset-0 z-50 bg-[#181512]/95 flex flex-col items-center justify-center p-4 sm:p-8"
           >
             {/* Close handler on backdrop click */}
             <div className="absolute inset-0" onClick={() => setActiveItem(null)} />
@@ -178,7 +178,7 @@ export default function Gallery() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", duration: 0.5 }}
-              className="relative max-w-5xl w-full aspect-video sm:aspect-square md:aspect-video overflow-hidden border-2 border-brand-orange bg-brand-navy p-1 shadow-2xl"
+              className="relative max-w-5xl w-full aspect-video sm:aspect-square md:aspect-video overflow-hidden border-2 border-brand-orange bg-[#181512] p-1 shadow-2xl"
             >
               <Image
                 src={activeItem.src}
@@ -191,7 +191,7 @@ export default function Gallery() {
               {/* Close Button */}
               <button
                 onClick={() => setActiveItem(null)}
-                className="absolute top-4 right-4 bg-brand-navy/85 border border-brand-orange text-brand-cream hover:text-brand-orange p-2 shadow-lg z-10 transition-colors"
+                className="absolute top-4 right-4 bg-[#181512]/85 border border-brand-orange text-brand-cream hover:text-brand-orange p-2 shadow-lg z-10 transition-colors"
                 aria-label="Close image"
               >
                 <X className="w-5 h-5" />

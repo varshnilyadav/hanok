@@ -213,7 +213,7 @@ export default function Menu() {
           <div className="w-16 h-1 bg-brand-orange mx-auto mb-6" />
           
           {/* Average Cost Highlight */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-navy/5 border border-brand-orange/20 text-brand-navy rounded-sm text-sm">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#181512]/5 border border-brand-orange/20 text-brand-navy rounded-sm text-sm">
             <Info className="w-4 h-4 text-brand-orange" />
             <span className="font-heading font-medium">Average Cost:</span>
             <span>₹800 per person / ₹1,600 for two</span>

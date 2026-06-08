@@ -38,7 +38,7 @@ export default function Contact() {
 
             {/* Address */}
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-brand-navy text-brand-cream border border-brand-orange/20 rounded-none shadow-sm flex-shrink-0">
+              <div className="p-3 bg-[#181512] text-brand-cream border border-brand-orange/20 rounded-none shadow-sm flex-shrink-0">
                 <MapPin className="w-5 h-5 text-brand-orange" />
               </div>
               <div>
@@ -55,7 +55,7 @@ export default function Contact() {
 
             {/* Contact Details */}
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-brand-navy text-brand-cream border border-brand-orange/20 rounded-none shadow-sm flex-shrink-0">
+              <div className="p-3 bg-[#181512] text-brand-cream border border-brand-orange/20 rounded-none shadow-sm flex-shrink-0">
                 <Phone className="w-5 h-5 text-brand-orange" />
               </div>
               <div>
@@ -76,7 +76,7 @@ export default function Contact() {
 
             {/* Hours */}
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-brand-navy text-brand-cream border border-brand-orange/20 rounded-none shadow-sm flex-shrink-0">
+              <div className="p-3 bg-[#181512] text-brand-cream border border-brand-orange/20 rounded-none shadow-sm flex-shrink-0">
                 <Clock className="w-5 h-5 text-brand-orange" />
               </div>
               <div>
@@ -94,7 +94,7 @@ export default function Contact() {
 
             {/* Social Connect */}
             <div className="flex items-start gap-4">
-              <div className="p-3 bg-brand-navy text-brand-cream border border-brand-orange/20 rounded-none shadow-sm flex-shrink-0">
+              <div className="p-3 bg-[#181512] text-brand-cream border border-brand-orange/20 rounded-none shadow-sm flex-shrink-0">
                 <Instagram className="w-5 h-5 text-brand-orange" />
               </div>
               <div>

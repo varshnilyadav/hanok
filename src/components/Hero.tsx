@@ -6,7 +6,7 @@ import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-brand-navy">
+    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-[#181512]">
       {/* Background Image with warm overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-10000 scale-105"
@@ -16,10 +16,10 @@ export default function Hero() {
       />
       
       {/* Dark overlay with brand color tint */}
-      <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/60 to-transparent opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#181512] via-[#181512]/60 to-transparent opacity-90" />
       
       {/* Decorative Traditional Korean Roof Vector Frame (subtle CSS) */}
-      <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-brand-navy/80 to-transparent pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-[#181512]/80 to-transparent pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 flex flex-col items-center">
@@ -28,7 +28,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-6 px-4 py-1.5 border border-brand-orange/40 bg-brand-navy/80 backdrop-blur-sm text-brand-orange text-xs font-heading uppercase tracking-[0.4em]"
+          className="mb-6 px-4 py-1.5 border border-brand-orange/40 bg-[#181512]/80 backdrop-blur-sm text-brand-orange text-xs font-heading uppercase tracking-[0.4em]"
         >
           한옥 • Seoulful Food
         </motion.div>

@@ -94,7 +94,7 @@ export default function Reservation() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch max-w-6xl mx-auto">
           
           {/* Left Side: Order Online */}
-          <div className="lg:col-span-5 flex flex-col justify-between p-8 bg-brand-navy/5 border border-brand-navy/10 rounded-sm relative group overflow-hidden text-brand-navy">
+          <div className="lg:col-span-5 flex flex-col justify-between p-8 bg-[#181512]/5 border border-brand-navy/10 rounded-sm relative group overflow-hidden text-brand-navy">
             <div className="absolute top-0 right-0 w-24 h-24 border-t border-r border-brand-orange/20 m-4 pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-24 h-24 border-b border-l border-brand-orange/20 m-4 pointer-events-none" />
 
@@ -153,7 +153,7 @@ export default function Reservation() {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Your name"
-                      className={`w-full bg-brand-navy/5 border ${
+                      className={`w-full bg-[#181512]/5 border ${
                         errors.name ? "border-brand-red" : "border-brand-navy/20"
                       } rounded-none py-2.5 pl-10 pr-4 font-body text-sm text-brand-navy placeholder-brand-navy/45 focus:outline-none focus:border-brand-orange transition-colors`}
                     />
@@ -177,7 +177,7 @@ export default function Reservation() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="10-digit number"
-                      className={`w-full bg-brand-navy/5 border ${
+                      className={`w-full bg-[#181512]/5 border ${
                         errors.phone ? "border-brand-red" : "border-brand-navy/20"
                       } rounded-none py-2.5 pl-10 pr-4 font-body text-sm text-brand-navy placeholder-brand-navy/45 focus:outline-none focus:border-brand-orange transition-colors`}
                     />
@@ -202,7 +202,7 @@ export default function Reservation() {
                       name="guests"
                       value={formData.guests}
                       onChange={handleChange}
-                      className="w-full bg-brand-navy/5 border border-brand-navy/20 rounded-none py-2.5 pl-10 pr-4 font-body text-sm text-brand-navy focus:outline-none focus:border-brand-orange appearance-none cursor-pointer"
+                      className="w-full bg-[#181512]/5 border border-brand-navy/20 rounded-none py-2.5 pl-10 pr-4 font-body text-sm text-brand-navy focus:outline-none focus:border-brand-orange appearance-none cursor-pointer"
                     >
                       <option value="1">1 Person</option>
                       <option value="2">2 People</option>
@@ -227,7 +227,7 @@ export default function Reservation() {
                       name="date"
                       value={formData.date}
                       onChange={handleChange}
-                      className={`w-full bg-brand-navy/5 border ${
+                      className={`w-full bg-[#181512]/5 border ${
                         errors.date ? "border-brand-red" : "border-brand-navy/20"
                       } rounded-none py-2.5 pl-10 pr-4 font-body text-sm text-brand-navy focus:outline-none focus:border-brand-orange cursor-pointer`}
                     />
@@ -249,7 +249,7 @@ export default function Reservation() {
                       name="time"
                       value={formData.time}
                       onChange={handleChange}
-                      className={`w-full bg-brand-navy/5 border ${
+                      className={`w-full bg-[#181512]/5 border ${
                         errors.time ? "border-brand-red" : "border-brand-navy/20"
                       } rounded-none py-2.5 pl-10 pr-4 font-body text-sm text-brand-navy focus:outline-none focus:border-brand-orange appearance-none cursor-pointer`}
                     >
@@ -283,7 +283,7 @@ export default function Reservation() {
                     onChange={handleChange}
                     rows={3}
                     placeholder="E.g., Birthday celebration, vegetarian preferences, high chair request..."
-                    className="w-full bg-brand-navy/5 border border-brand-navy/20 rounded-none py-3 pl-10 pr-4 font-body text-sm text-brand-navy placeholder-brand-navy/45 focus:outline-none focus:border-brand-orange transition-colors resize-none"
+                    className="w-full bg-[#181512]/5 border border-brand-navy/20 rounded-none py-3 pl-10 pr-4 font-body text-sm text-brand-navy placeholder-brand-navy/45 focus:outline-none focus:border-brand-orange transition-colors resize-none"
                   />
                 </div>
               </div>
@@ -293,7 +293,7 @@ export default function Reservation() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-brand-navy hover:bg-brand-orange disabled:bg-brand-navy/50 text-brand-cream font-heading text-xs font-bold uppercase tracking-widest py-4 transition-all duration-300 border-2 border-brand-navy hover:border-brand-orange"
+                  className="w-full bg-[#181512] hover:bg-brand-orange disabled:bg-[#181512]/50 text-brand-cream font-heading text-xs font-bold uppercase tracking-widest py-4 transition-all duration-300 border-2 border-[#181512] hover:border-brand-orange"
                 >
                   {isSubmitting ? "Processing..." : "Confirm Booking"}
                 </button>
@@ -312,7 +312,7 @@ export default function Reservation() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-brand-navy/90 backdrop-blur-sm flex items-center justify-center p-4"
+            className="fixed inset-0 z-50 bg-[#181512]/80 backdrop-blur-sm flex items-center justify-center p-4"
           >
             {/* Modal Box */}
             <motion.div
@@ -343,7 +343,7 @@ export default function Reservation() {
               </p>
 
               {/* Summary details */}
-              <div className="bg-brand-navy/5 border border-brand-navy/10 p-4 mb-6 text-left space-y-2 text-sm font-body">
+              <div className="bg-[#181512]/5 border border-brand-navy/10 p-4 mb-6 text-left space-y-2 text-sm font-body">
                 <div className="flex justify-between">
                   <span className="text-brand-navy/60 font-heading text-[10px] uppercase font-bold tracking-wider">Guest Name:</span>
                   <span className="font-semibold">{formData.name}</span>
@@ -364,7 +364,7 @@ export default function Reservation() {
 
               <button
                 onClick={resetForm}
-                className="w-full bg-brand-navy hover:bg-brand-orange text-brand-cream font-heading text-xs font-bold uppercase tracking-wider py-3 border border-brand-navy hover:border-brand-orange transition-colors"
+                className="w-full bg-[#181512] hover:bg-brand-orange text-brand-cream font-heading text-xs font-bold uppercase tracking-wider py-3 border border-[#181512] hover:border-brand-orange transition-colors"
               >
                 Got It, Thanks!
               </button>

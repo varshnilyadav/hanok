@@ -51,7 +51,7 @@ export default function About() {
             </div>
 
             {/* Overlapping small detail badge */}
-            <div className="absolute -bottom-6 -right-6 w-48 bg-brand-navy p-6 shadow-xl border border-brand-orange/30 hidden sm:block">
+            <div className="absolute -bottom-6 -right-6 w-48 bg-[#181512] p-6 shadow-xl border border-brand-orange/30 hidden sm:block">
               <span className="font-heading text-[10px] uppercase tracking-[0.3em] text-brand-orange font-bold block mb-1">
                 Design Motif
               </span>
@@ -102,7 +102,7 @@ export default function About() {
             {/* Quote Block */}
             <motion.div 
               variants={itemVariants}
-              className="border-l-4 border-brand-orange bg-brand-navy/5 p-6 relative rounded-r-sm"
+              className="border-l-4 border-brand-orange bg-[#181512]/5 p-6 relative rounded-r-sm"
             >
               <Quote className="absolute top-4 right-4 w-10 h-10 text-brand-orange/10 pointer-events-none" />
               <p className="font-body italic text-brand-navy/95 text-base sm:text-lg leading-relaxed mb-3">
