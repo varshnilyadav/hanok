@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Menu from "@/components/Menu";
 import Gallery from "@/components/Gallery";
+import Instagram from "@/components/Instagram";
 import Reviews from "@/components/Reviews";
 import Reservation from "@/components/Reservation";
 import Contact from "@/components/Contact";
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <Menu />
         <Gallery />
+        <Instagram />
         <Reviews />
         <Reservation />
         <Contact />
