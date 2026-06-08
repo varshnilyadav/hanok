@@ -74,7 +74,7 @@ export default function Reservation() {
   };
 
   return (
-    <section id="reserve" className="py-24 bg-brand-navy text-brand-cream relative overflow-hidden border-t border-brand-orange/15">
+    <section id="reserve" className="py-24 bg-brand-cream text-brand-navy relative overflow-hidden border-t border-brand-orange/15">
       {/* Subtle traditional design accents */}
       <div className="absolute inset-0 bg-lattice opacity-5 pointer-events-none" />
 
@@ -85,7 +85,7 @@ export default function Reservation() {
           <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-brand-orange mb-3 block">
             Dine With Us
           </span>
-          <h2 className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-brand-cream tracking-tight mb-4">
+          <h2 className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-brand-navy tracking-tight mb-4">
             Order & Reservations
           </h2>
           <div className="w-16 h-1 bg-brand-orange mx-auto" />
@@ -94,7 +94,7 @@ export default function Reservation() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch max-w-6xl mx-auto">
           
           {/* Left Side: Order Online */}
-          <div className="lg:col-span-5 flex flex-col justify-between p-8 bg-brand-cream/5 border border-brand-cream/10 rounded-sm relative group overflow-hidden">
+          <div className="lg:col-span-5 flex flex-col justify-between p-8 bg-brand-navy/5 border border-brand-navy/10 rounded-sm relative group overflow-hidden text-brand-navy">
             <div className="absolute top-0 right-0 w-24 h-24 border-t border-r border-brand-orange/20 m-4 pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-24 h-24 border-b border-l border-brand-orange/20 m-4 pointer-events-none" />
 
@@ -102,10 +102,10 @@ export default function Reservation() {
               <span className="font-heading text-xs font-bold uppercase tracking-wider text-brand-orange block mb-4">
                 Instant Delivery
               </span>
-              <h3 className="font-heading font-black text-2xl sm:text-3xl text-brand-cream tracking-wider mb-4">
+              <h3 className="font-heading font-black text-2xl sm:text-3xl text-brand-navy tracking-wider mb-4">
                 Craving Hanok at Home?
               </h3>
-              <p className="font-body text-sm text-brand-cream/70 leading-relaxed mb-8">
+              <p className="font-body text-sm text-brand-navy/70 leading-relaxed mb-8">
                 Enjoy hot, crispy Korean Fried Chicken Wings, loaded Rice Bowls, or bubble teas delivered directly to your doorstep. We are partnered with Zomato for super-fast delivery in Film Nagar, Jubilee Hills, and surrounding areas.
               </p>
             </div>
@@ -120,14 +120,14 @@ export default function Reservation() {
                 <span>Order on Zomato</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-2" />
               </a>
-              <span className="block text-center font-body text-[11px] text-brand-cream/40 mt-3">
+              <span className="block text-center font-body text-[11px] text-brand-navy/40 mt-3">
                 Usually delivers in 30-40 minutes
               </span>
             </div>
           </div>
 
           {/* Right Side: Reserve Form */}
-          <div className="lg:col-span-7 bg-brand-cream text-brand-navy p-8 sm:p-10 border border-brand-navy/10 rounded-sm shadow-xl relative">
+          <div className="lg:col-span-7 bg-white text-brand-navy p-8 sm:p-10 border border-brand-navy/10 rounded-sm shadow-xl relative">
             <div className="absolute -top-1 -left-1 w-8 h-8 border-t-2 border-l-2 border-brand-orange pointer-events-none" />
             <div className="absolute -bottom-1 -right-1 w-8 h-8 border-b-2 border-r-2 border-brand-orange pointer-events-none" />
 

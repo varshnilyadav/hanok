@@ -81,7 +81,7 @@ export default function Gallery() {
   );
 
   return (
-    <section id="gallery" className="py-24 bg-brand-navy text-brand-cream relative overflow-hidden">
+    <section id="gallery" className="py-24 bg-brand-cream text-brand-navy relative overflow-hidden border-t border-brand-orange/15">
       
       {/* Decorative lattice background with reduced opacity */}
       <div className="absolute inset-0 bg-lattice opacity-5 pointer-events-none" />
@@ -93,11 +93,11 @@ export default function Gallery() {
           <span className="font-heading text-xs font-bold uppercase tracking-[0.3em] text-brand-orange mb-3 block">
             Visual Ambiance
           </span>
-          <h2 className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-brand-cream tracking-tight mb-4">
+          <h2 className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-brand-navy tracking-tight mb-4">
             Gallery of Hanok
           </h2>
           <div className="w-16 h-1 bg-brand-orange mx-auto mb-6" />
-          <p className="font-body text-brand-cream/70 text-sm sm:text-base max-w-xl mx-auto">
+          <p className="font-body text-brand-navy/70 text-sm sm:text-base max-w-xl mx-auto">
             A glimpse into our cozy dining spaces, detailed wooden architecture, and signature plates crafted with fiery spices.
           </p>
         </div>
@@ -108,10 +108,10 @@ export default function Gallery() {
             <button
               key={type}
               onClick={() => setFilter(type as any)}
-              className={`px-5 py-2 font-heading text-[10px] sm:text-xs uppercase tracking-wider font-extrabold border transition-all duration-300 ${
+              className={`px-5 py-2 font-heading text-[10px] sm:text-xs uppercase tracking-wider font-extrabold border transition-all duration-300 cursor-pointer ${
                 filter === type
                   ? "bg-brand-orange border-brand-orange text-brand-cream"
-                  : "border-brand-cream/20 text-brand-cream/70 hover:border-brand-cream hover:text-brand-cream"
+                  : "border-brand-navy/20 text-brand-navy/70 hover:border-brand-navy hover:text-brand-navy"
               }`}
             >
               {type}
@@ -133,7 +133,7 @@ export default function Gallery() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                className="group relative aspect-square overflow-hidden border border-brand-cream/10 bg-brand-navy cursor-pointer"
+                className="group relative aspect-square overflow-hidden border border-brand-navy/10 bg-brand-cream cursor-pointer"
                 onClick={() => setActiveItem(item)}
               >
                 <Image
